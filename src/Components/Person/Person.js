@@ -26,7 +26,8 @@ class Person extends Component {
     };
     return (
       
-        <div className="PersonBox">
+        <div className="PersonBox"onClick={this.props.remove}>
+          {this.props.index}
             <h1 style={style}>
               <label style={{color:"red",fontSize:"40px"}}>Name</label> <i>{this.props.Name}</i> <br/>
               <label>age</label><i>{this.props.age}</i>
